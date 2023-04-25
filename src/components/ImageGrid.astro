@@ -1,0 +1,15 @@
+---
+import { Image } from '@astrojs/image/components';
+const { collection } = Astro.props
+---
+<div class="grid grid-cols-1 w-full mx-auto gap-4 my-4">
+  {collection.resources.map(photo => 
+  <Image 
+  class="mx-auto" 
+  src={photo.url} 
+  alt={photo.public_id} 
+  width="350" 
+  aspectRatio="1/1" 
+  format="jpg" />
+)}
+</div>

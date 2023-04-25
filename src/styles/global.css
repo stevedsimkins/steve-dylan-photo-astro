@@ -1,0 +1,13 @@
+@tailwind base;
+@layer base {
+
+	html {
+		@apply h-full scroll-smooth border-t-2;
+	}
+
+	html body {
+		@apply mx-auto flex h-full flex-col font-sans text-sm font-normal antialiased;
+	}
+}
+@tailwind components;
+@tailwind utilities;
